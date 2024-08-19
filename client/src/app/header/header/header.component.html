@@ -1,0 +1,12 @@
+<section class="hero">
+    <div class="hero__image">
+        <img class="image__img" src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="{{ movie?.title }}">
+        <div class="image__filter"></div>
+    </div>
+    <div class="hero-details">
+        <div class="details__data">
+            <h2>FilmFrames</h2>
+            <app-movie-button [path]="pathToDetail" [id]="[movie?.id]"></app-movie-button>
+        </div>
+    </div>
+</section>
