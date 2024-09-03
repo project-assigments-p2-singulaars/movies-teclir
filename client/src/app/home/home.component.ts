@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit{
     movieService = inject(MovieServiceService);
 
     ngOnInit(): void {
-        this.movieService.getHeaderMovie().subscribe(observable => {
+        this.movieService.getHeaderMovie(true).subscribe(observable => {
             console.log(observable, 'hero movie');
             this.movieHeader = observable[0];
         });

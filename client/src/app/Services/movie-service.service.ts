@@ -19,7 +19,7 @@ export class MovieServiceService {
     
   }
 
-  getHeaderMovie(): Observable<Movie[]>{
+  getHeaderMovie(hero:boolean = false): Observable<Movie[]>{
     return this.http.get<Movie[]>('http://localhost:3000/movies?hero=true');
   }
 }
