@@ -1,0 +1,34 @@
+#carrusel {
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; 
+}
+
+
+
+.carrusel__items {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 50vh;
+    padding-top: 2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-left: 2rem;
+
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    app-carrusel-movie:first-of-type {
+        margin-left: 10%;
+    }
+
+    app-carrusel-movie:last-of-type {
+        margin-right: 10%;
+    }
+}

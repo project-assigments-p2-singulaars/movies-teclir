@@ -1,0 +1,8 @@
+<section id="carrusel">
+
+        <div class="carrusel__items">
+            @for (movie of movieList | async; track $index) {
+            <app-carrusel-item [movie]="movie"></app-carrusel-item>
+            }
+        </div>
+</section>
